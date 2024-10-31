@@ -12,6 +12,7 @@ def is_valid_password(password_string):
             any(char.isalpha() for char in password_string) and
             any(not char.isalnum() for char in password_string))
 
+
 def send_verification_email(email_address):
     """Simulate sending a verification email."""
     print(f"Sending verification email to {email_address}...")
